@@ -1,5 +1,4 @@
-# Portfolio
-Portfolio entirely built from HTML and CSS
+**HTML+CSS**
 
 ****This is a responsive *Portfolio Website* created to showcase my technical skills and projects as a Full-Stack Web Developer.It is built using *HTML, **CSS*, and a clean layout structure to ensure a seamless user experience across devices.****
 
