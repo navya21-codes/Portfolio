@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Navya Challa — Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-initials">NC</div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+</div>
+
+<!-- PARTICLE CANVAS -->
+<canvas id="particle-canvas"></canvas>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#hero" class="nav-logo">Navya Challa</a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section id="hero">
+  <h1 class="hero-name reveal">Navya<br/>Challa</h1>
+  <p class="hero-sub reveal">Full-Stack Developer</p>
+  <div class="hero-btns">
+    <a href="#contact" class="btn-primary">Contact Me</a>
+    <a href="#projects" class="btn-ghost">View Projects</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-badge reveal">✦ About Me</div>
+  <p class="about-text reveal">
+    Hi! I'm <strong>Navya Challa</strong>, a final-year Computer Science Engineering student at
+    JNTU Anantapur, graduating in 2026. My passion lies in <strong>Full-Stack Development</strong> —
+    building complete web applications from the ground up, both frontend and backend.
+  </p>
+  <p class="about-text reveal">
+    I love turning ideas into real, working products. Whether it's crafting a smooth, responsive
+    user interface with <strong>React.js</strong> or designing powerful backend APIs with
+    <strong>Node.js</strong>, I enjoy every layer of the stack. I believe great software is built
+    with clean code, attention to detail, and a passion for solving real problems.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2 class="section-title reveal">Technical <span>Skills</span></h2>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-cat-title">Frontend</div>
+      <div class="skill-item">
+        <div class="skill-name-row"><span>React.js</span><span class="skill-pct">75%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="75" style="background:linear-gradient(90deg,#4f46e5,#818cf8)"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name-row"><span>JavaScript</span><span class="skill-pct">70%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="70" style="background:linear-gradient(90deg,#ec4899,#818cf8)"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name-row"><span>HTML5 &amp; CSS3</span><span class="skill-pct">85%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="85" style="background:linear-gradient(90deg,#06b6d4,#4f46e5)"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name-row"><span>Tailwind CSS</span><span class="skill-pct">72%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="72" style="background:linear-gradient(90deg,#06b6d4,#ec4899)"></div></div>
+      </div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:.1s">
+      <div class="skill-cat-title">Backend</div>
+      <div class="skill-item">
+        <div class="skill-name-row"><span>Node.js</span><span class="skill-pct">73%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="73" style="background:linear-gradient(90deg,#f59e0b,#ec4899)"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name-row"><span>Python</span><span class="skill-pct">75%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="75" style="background:linear-gradient(90deg,#4f46e5,#06b6d4)"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name-row"><span>REST API Development</span><span class="skill-pct">70%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="70" style="background:linear-gradient(90deg,#ec4899,#f59e0b)"></div></div>
+      </div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:.2s">
+      <div class="skill-cat-title">Database</div>
+      <div class="skill-item">
+        <div class="skill-name-row"><span>SQL</span><span class="skill-pct">72%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="72" style="background:linear-gradient(90deg,#818cf8,#06b6d4)"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name-row"><span>MongoDB</span><span class="skill-pct">75%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="75" style="background:linear-gradient(90deg,#4f46e5,#ec4899)"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-name-row"><span>Firebase</span><span class="skill-pct">80%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-pct="80" style="background:linear-gradient(90deg,#f59e0b,#06b6d4)"></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="tools-section reveal">
+    <div class="tools-title">Tools</div>
+    <div class="chips-cloud">
+      <span class="chip">Git/GitHub</span>
+      <span class="chip">VS Code</span>
+      <span class="chip">Vercel</span>
+      <span class="chip">Firebase</span>
+      <span class="chip">Netlify</span>
+      <span class="chip">Render</span>
+      <span class="chip">Postman</span>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2 class="section-title reveal">Professional <span>Experience</span></h2>
+  <div class="timeline">
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot" style="background:var(--cyan);box-shadow:0 0 12px var(--cyan)"></div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <div class="exp-title">Python Full Stack Developer Intern</div>
+          <div class="exp-date">Jul 2026 </div>
+        </div>
+        <div class="exp-company">Pentagon Space</div>
+        <div class="exp-location">📍 Bengaluru, India</div>
+        <ul class="exp-bullets">
+          <li>Building strong fundamentals in Python and Django framework, with focus on REST API design, routing, and server-side logic for scalable web applications.</li>
+          <li>Developing proficiency in SQL for relational database design, querying, and management, complementing existing MongoDB/NoSQL expertise from MERN projects.</li>
+          <li>Continuing to build frontend proficiency with React.js and core web technologies (HTML5, CSS3, JavaScript ES6+), reinforcing consistency across MERN and Python full-stack development paths.</li>
+          <li>Building secure and maintainable backend applications using Django while following clean architecture and reusable coding principles.</li>
+        </ul>
+        <div class="exp-badges">
+          <span class="exp-badge badge-cyan">Python</span>
+          <span class="exp-badge badge-indigo">Django</span>
+          <span class="exp-badge badge-amber">HTML5</span>
+          <span class="exp-badge badge-pink">CSS3</span>
+          <span class="exp-badge badge-indigo">JavaScript(ES6+)</span>
+          <span class="exp-badge badge-amber">REST APIs</span>
+          <span class="exp-badge badge-cyan">SQL</span>
+          <span class="exp-badge badge-indigo">React.js</span>
+          <span class="exp-badge badge-pink">Bootstrap</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <div class="exp-title">Full-Stack Web Development Intern</div>
+          <div class="exp-date">Oct 2025 – Nov 2025</div>
+        </div>
+        <div class="exp-company">Future Interns</div>
+        <div class="exp-location">📍 Remote</div>
+        <ul class="exp-bullets">
+          <li>Delivered 3 production-ready full-stack applications — developer portfolio, e-commerce storefront, and brand redesign website — each with decoupled frontend/backend structure, MongoDB integration, and live Vercel deployment.</li>
+          <li>Built RESTful APIs using Node.js and Express.js with modular route architecture, handling data for contacts, projects, and product catalogs across multiple applications.</li>
+          <li>Developed a complete MERN stack e-commerce app featuring product catalog, real-time cart via React Context API, category filtering, product search, and checkout form with input validation.</li>
+          <li>Collaborated with cross-functional teams to analyze requirements, test features, and develop production-ready web applications prioritizing scalability and reliability.</li>
+        </ul>
+        <div class="exp-badges">
+          <span class="exp-badge badge-amber">HTML5</span>
+          <span class="exp-badge badge-pink">CSS3</span>
+          <span class="exp-badge badge-cyan">JavaScript(ES6+)</span>
+          <span class="exp-badge badge-indigo">React.js</span>
+          <span class="exp-badge badge-amber">Node.js</span>
+          <span class="exp-badge badge-pink">MongoDB</span>
+          <span class="exp-badge badge-amber">Vercel</span>
+          <span class="exp-badge badge-indigo">Express.js</span>
+          <span class="exp-badge badge-cyan">REST APIs</span>
+          <span class="exp-badge badge-amber">Git/GitHub</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot" style="background:var(--pink);box-shadow:0 0 12px var(--pink)"></div>
+      <div class="exp-card">
+        <div class="exp-header">
+          <div class="exp-title">Front-End Web Development Intern</div>
+          <div class="exp-date">Jun 2025 – Jul 2025</div>
+        </div>
+        <div class="exp-company">Codetech IT Solutions</div>
+        <div class="exp-location">📍 Remote</div>
+        <ul class="exp-bullets">
+          <li>Integrated Socket.IO WebSockets with a Node.js/Express backend to build a real-time chat application, enabling instant bidirectional message delivery across multiple connected clients with zero page reload.</li>
+          <li>Managed WebSocket connection lifecycle events — connect, disconnect, and message broadcast — on the Node.js server using Socket.IO listeners, keeping chat sessions stable across simultaneous users.</li>
+          <li>Implemented JavaScript-based route protection so unauthenticated users are automatically redirected from protected pages, and deployed the platform live on Vercel for public access.</li>
+        </ul>
+        <div class="exp-badges">
+          <span class="exp-badge badge-pink">HTML</span>
+          <span class="exp-badge badge-cyan">CSS</span>
+          <span class="exp-badge badge-amber">JavaScript(ES6+)</span>
+          <span class="exp-badge badge-pink">Socket.IO</span>
+          <span class="exp-badge badge-cyan">WebSockets</span>
+          <span class="exp-badge badge-indigo">Node.js</span>
+          <span class="exp-badge badge-amber">Vercel</span>
+          <span class="exp-badge badge-cyan">Git/GitHub</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <span class="project-emoji">🎓</span>
+      <div class="project-name">Learning Management System</div>
+      <p class="project-desc">Full-stack LMS with React frontend and Node.js/Express backend enabling secure user registration, authentication, course catalog browsing, and personalized dashboards.</p>
+      <div class="project-tags">
+        <span class="project-tag">HTML5</span>
+        <span class="project-tag">CSS3</span>
+        <span class="project-tag">JavaScript(ES6+)</span>
+        <span class="project-tag">React.js</span>
+        <span class="project-tag">Node.js</span>
+        <div class="project-links">
+        <a href="https://github.com/navya21-codes/Learning-Management-System" target="_blank" class="project-btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal" style="transition-delay:.1s">
+      <span class="project-emoji">💼</span>
+      <div class="project-name">Developer Portfolio</div>
+      <p class="project-desc">Modern portfolio website with real backend-powered contact system using Node.js, Express.js, and Nodemailer with dynamic data management via MongoDB models and API routes.</p>
+      <div class="project-tags">
+        <span class="project-tag">HTML5</span>
+        <span class="project-tag">CSS3</span>
+        <span class="project-tag">JavaScript(ES6+)</span>
+        <span class="project-tag">Node.js</span>
+        <span class="project-tag">Express.js</span>
+        <span class="project-tag">MongoDB</span>
+        <div class="project-links">
+        <a href="https://github.com/navya21-codes/Developer-Portfolio" target="_blank" class="project-btn">GitHub</a>
+        <a href="https://developer-portfolio-sooty-mu.vercel.app/" target="_blank" class="project-btn">Live Demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal" style="transition-delay:.2s">
+      <span class="project-emoji">🌤️</span>
+      <div class="project-name">Weather App</div>
+      <p class="project-desc">Weather app using JavaScript async/await to fetch data from OpenWeatherMap and Geolocation APIs, displaying current conditions and 5-day forecasts with dynamic icons.</p>
+      <div class="project-tags">
+        <span class="project-tag">HTML5</span>
+        <span class="project-tag">CSS3</span>
+        <span class="project-tag">JavaScript(ES6+)</span>
+        <span class="project-tag">OpenWeatherMap API</span>
+        <span class="project-tag">Geolocation API</span>
+        <div class="project-links">
+        <a href="https://github.com/navya21-codes/Weather-App" target="_blank" class="project-btn">GitHub</a>
+        <a href="https://weather-app-alpha-livid-69.vercel.app/" target="_blank" class="project-btn">Live Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2 class="section-title reveal">Education &amp; <span>Qualifications</span></h2>
+  <div class="edu-stack">
+    <div class="edu-card reveal">
+      <div class="edu-icon" style="background:linear-gradient(135deg,#4f46e5,#ec4899)">🎓</div>
+      <div>
+        <div class="edu-degree">Bachelor of Technology — Computer Science &amp; Engineering</div>
+        <div class="edu-institution">Jawaharlal Nehru Technological University, Anantapur</div>
+        <div class="edu-meta">
+          <span>2022 – 2026</span>
+          <span>Anantapur, India</span>
+          <span class="edu-gpa">GPA: 7.88 / 10</span>
+        </div>
+      </div>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-icon" style="background:linear-gradient(135deg,#06b6d4,#4f46e5)">📖</div>
+      <div>
+        <div class="edu-degree">Board of Intermediate Education — MPC</div>
+        <div class="edu-institution">JCNRM Junior College</div>
+        <div class="edu-meta">
+          <span>2020 – 2022</span>
+          <span>Tadipatri, India</span>
+          <span class="edu-gpa">GPA: 7.16 / 10</span>
+        </div>
+      </div>
+    </div>
+    <div class="edu-card reveal">
+      <div class="edu-icon" style="background:linear-gradient(135deg,#f59e0b,#ec4899)">⭐</div>
+      <div>
+        <div class="edu-degree">Board of SSC Education</div>
+        <div class="edu-institution">Sri Chaitanya Techno School</div>
+        <div class="edu-meta">
+          <span>2019 – 2020</span>
+          <span>Tadipatri, India</span>
+          <span class="edu-gpa">GPA: 10 / 10</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title reveal">
+    Contact <span>Me</span>
+  </h2>
+
+  <div class="contact-container reveal">
+
+    <form id="contactForm" class="contact-form" onsubmit="sendEmail(event)">
+
+      <div class="contact-row">
+
+        <input
+          type="text"
+          id="from_name"
+          placeholder="Name"
+          required
+        />
+
+        <input
+          type="email"
+          id="from_email"
+          placeholder="Email Address"
+          required
+        />
+
+        <input
+          type="text"
+          id="subject"
+          placeholder="Phone Number"
+          required
+        />
+
+      </div>
+
+      <textarea
+        id="message"
+        placeholder="Your Message"
+        required
+      ></textarea>
+
+      <button
+        type="submit"
+        id="sendBtn"
+        class="contact-btn">
+        Submit
+      </button>
+
+      <p id="formMsg" class="form-msg"></p>
+
+    </form>
+
+    <div class="contact-bottom">
+
+      <div class="contact-info">
+
+        <h3>Email Me</h3>
+
+        <a href="mailto:navyachalla2004@gmail.com">
+          navyachalla2004@gmail.com
+        </a>
+
+      </div>
+
+      <div class="contact-info">
+
+        <h3>Call Me</h3>
+
+        <a href="tel:+917893849468">
+          +91 789X8XX4X8
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Left Social Sidebar -->
+<div class="social-sidebar">
+
+  <a href="https://www.instagram.com/me_cutie_.04/"
+     target="_blank"
+     class="social-link">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/in/navya-challa-59b273281/"
+     target="_blank"
+     class="social-link">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://github.com/navya21-codes"
+     target="_blank"
+     class="social-link">
+    <i class="fab fa-github"></i>
+  </a>
+
+  <span class="follow-text">Follow Me</span>
+
+</div>
+
+</section>
+
+
+<footer class="footer">
+    <p>© Navya Challa 2026</p>
+</footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
