@@ -125,9 +125,9 @@ animateParticles();
 
 /* ── CONTACT FORM (EmailJS) ── */
 // Replace these with your own EmailJS service/template/public key
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
+const EMAILJS_SERVICE_ID = "service_vlz8hpb";
+const EMAILJS_TEMPLATE_ID = "template_l1ea27c";
+const EMAILJS_PUBLIC_KEY = "BPqjlRn4GYwplkwjE";
 
 if (window.emailjs) {
   emailjs.init(EMAILJS_PUBLIC_KEY);
@@ -140,9 +140,9 @@ function sendEmail(event) {
   const formMsg = document.getElementById("formMsg");
 
   const params = {
-    from_name: document.getElementById("from_name").value,
-    from_email: document.getElementById("from_email").value,
-    subject: document.getElementById("subject").value,
+    user_name: document.getElementById("user_name").value,
+    user_email: document.getElementById("user_email").value,
+    phone: document.getElementById("phone").value,
     message: document.getElementById("message").value,
   };
 
@@ -154,7 +154,7 @@ function sendEmail(event) {
   emailjs
     .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params)
     .then(() => {
-      formMsg.textContent = "Message sent successfully! 🎉";
+      formMsg.textContent = "Message sent successfully! Thank you for reaching out.";
       formMsg.classList.add("success");
       document.getElementById("contactForm").reset();
     })
@@ -164,7 +164,7 @@ function sendEmail(event) {
     })
     .finally(() => {
       sendBtn.disabled = false;
-      sendBtn.textContent = "Send Message 🚀";
+      sendBtn.textContent = "Send Message ";
     });
 
   return false;

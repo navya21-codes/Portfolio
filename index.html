@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="style.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
 
@@ -46,7 +46,7 @@
 
 <!-- HERO -->
 <section id="hero">
-  <h1 class="hero-name reveal">Navya<br/>Challa</h1>
+  <h1 class="hero-name reveal">Navya Challa</h1>
   <p class="hero-sub reveal">Full-Stack Developer</p>
   <div class="hero-btns">
     <a href="#contact" class="btn-primary">Contact Me</a>
@@ -247,7 +247,7 @@
         <span class="project-tag">React.js</span>
         <span class="project-tag">Node.js</span>
         <div class="project-links">
-        <a href="https://github.com/navya21-codes/Learning-Management-System" target="_blank" class="project-btn">GitHub</a>
+          <a href="https://github.com/navya21-codes/Learning-Management-System" target="_blank" class="project-btn">GitHub</a>
         </div>
       </div>
     </div>
@@ -263,8 +263,8 @@
         <span class="project-tag">Express.js</span>
         <span class="project-tag">MongoDB</span>
         <div class="project-links">
-        <a href="https://github.com/navya21-codes/Developer-Portfolio" target="_blank" class="project-btn">GitHub</a>
-        <a href="https://developer-portfolio-sooty-mu.vercel.app/" target="_blank" class="project-btn">Live Demo</a>
+          <a href="https://github.com/navya21-codes/Developer-Portfolio" target="_blank" class="project-btn">GitHub</a>
+          <a href="https://developer-portfolio-sooty-mu.vercel.app/" target="_blank" class="project-btn">Live Demo</a>
         </div>
       </div>
     </div>
@@ -279,8 +279,8 @@
         <span class="project-tag">OpenWeatherMap API</span>
         <span class="project-tag">Geolocation API</span>
         <div class="project-links">
-        <a href="https://github.com/navya21-codes/Weather-App" target="_blank" class="project-btn">GitHub</a>
-        <a href="https://weather-app-alpha-livid-69.vercel.app/" target="_blank" class="project-btn">Live Link</a>
+          <a href="https://github.com/navya21-codes/Weather-App" target="_blank" class="project-btn">GitHub</a>
+          <a href="https://weather-app-alpha-livid-69.vercel.app/" target="_blank" class="project-btn">Live Link</a>
         </div>
       </div>
     </div>
@@ -335,36 +335,31 @@
   <h2 class="section-title reveal">
     Contact <span>Me</span>
   </h2>
-
   <div class="contact-container reveal">
-
     <form id="contactForm" class="contact-form" onsubmit="sendEmail(event)">
-
       <div class="contact-row">
-
         <input
           type="text"
-          id="from_name"
+          id="user_name"
           placeholder="Name"
           required
         />
 
         <input
           type="email"
-          id="from_email"
+          id="user_email"
           placeholder="Email Address"
           required
         />
 
         <input
           type="text"
-          id="subject"
+          id="phone"
           placeholder="Phone Number"
           required
         />
 
       </div>
-
       <textarea
         id="message"
         placeholder="Your Message"
@@ -377,38 +372,26 @@
         class="contact-btn">
         Submit
       </button>
-
       <p id="formMsg" class="form-msg"></p>
-
     </form>
 
     <div class="contact-bottom">
-
       <div class="contact-info">
-
         <h3>Email Me</h3>
-
         <a href="mailto:navyachalla2004@gmail.com">
           navyachalla2004@gmail.com
         </a>
-
       </div>
-
       <div class="contact-info">
-
         <h3>Call Me</h3>
-
         <a href="tel:+917893849468">
           +91 789X8XX4X8
         </a>
-
       </div>
-
     </div>
-
   </div>
 
-  <!-- Left Social Sidebar -->
+<!-- Left Social Sidebar -->
 <div class="social-sidebar">
 
   <a href="https://www.instagram.com/me_cutie_.04/"
@@ -428,18 +411,13 @@
      class="social-link">
     <i class="fab fa-github"></i>
   </a>
-
   <span class="follow-text">Follow Me</span>
-
 </div>
-
 </section>
-
 
 <footer class="footer">
     <p>© Navya Challa 2026</p>
 </footer>
-
 </main>
 
 <script src="script.js"></script>
