@@ -15,7 +15,7 @@
 - CSS3
 - JavaScript (ES6+)
 - Responsive Web Design
-- Git & GitHub
+
 
 ## 📂 Project Structure
 
